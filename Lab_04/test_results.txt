@@ -1,0 +1,52 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.3, pytest-9.2.0, pluggy-1.7.0 -- C:\labs\Функціональне програмування\.venv\Scripts\python.exe
+rootdir: C:\labs\Функціональне програмування\functional-programming\Lab_04
+configfile: pyproject.toml
+testpaths: tests
+plugins: platformdirs-4.14.5
+collecting ... collected 42 items
+
+tests/test_fib.py::test_fib_small PASSED                                 [  2%]
+tests/test_fib.py::test_fib_iter_matches PASSED                          [  4%]
+tests/test_fib.py::test_cache_clear_and_info PASSED                      [  7%]
+tests/test_fib.py::test_negative_input PASSED                            [  9%]
+tests/test_fib.py::test_tail_recursion_no_tco_and_trampoline PASSED      [ 11%]
+tests/test_performance.py::test_search_recursive_vs_iterative PASSED     [ 14%]
+tests/test_performance.py::test_fib_memoization_speedup PASSED           [ 16%]
+tests/test_quicksort.py::test_quicksort_basic PASSED                     [ 19%]
+tests/test_quicksort.py::test_quicksort_random_against_sorted PASSED     [ 21%]
+tests/test_quicksort.py::test_many_duplicates_3way PASSED                [ 23%]
+tests/test_quicksort.py::test_quicksort_does_not_mutate PASSED           [ 26%]
+tests/test_quicksort.py::test_insertion_and_median PASSED                [ 28%]
+tests/test_search.py::test_found_every_element[0-2] PASSED               [ 30%]
+tests/test_search.py::test_found_every_element[1-5] PASSED               [ 33%]
+tests/test_search.py::test_found_every_element[2-8] PASSED               [ 35%]
+tests/test_search.py::test_found_every_element[3-12] PASSED              [ 38%]
+tests/test_search.py::test_found_every_element[4-16] PASSED              [ 40%]
+tests/test_search.py::test_found_every_element[5-23] PASSED              [ 42%]
+tests/test_search.py::test_found_every_element[6-38] PASSED              [ 45%]
+tests/test_search.py::test_found_every_element[7-56] PASSED              [ 47%]
+tests/test_search.py::test_found_every_element[8-72] PASSED              [ 50%]
+tests/test_search.py::test_found_every_element[9-91] PASSED              [ 52%]
+tests/test_search.py::test_missing_values[-5] PASSED                     [ 54%]
+tests/test_search.py::test_missing_values[0] PASSED                      [ 57%]
+tests/test_search.py::test_missing_values[3] PASSED                      [ 59%]
+tests/test_search.py::test_missing_values[13] PASSED                     [ 61%]
+tests/test_search.py::test_missing_values[57] PASSED                     [ 64%]
+tests/test_search.py::test_missing_values[92] PASSED                     [ 66%]
+tests/test_search.py::test_missing_values[1000] PASSED                   [ 69%]
+tests/test_search.py::test_edge_cases_empty_and_single PASSED            [ 71%]
+tests/test_search.py::test_first_and_last_and_strings PASSED             [ 73%]
+tests/test_search.py::test_input_is_not_mutated PASSED                   [ 76%]
+tests/test_search.py::test_duplicates_lower_bound PASSED                 [ 78%]
+tests/test_search.py::test_recursive_matches_iterative_random PASSED     [ 80%]
+tests/test_search.py::test_depth_is_logarithmic PASSED                   [ 83%]
+tests/test_search.py::test_linear_recursion_hits_limit_but_binary_does_not PASSED [ 85%]
+tests/test_search.py::test_trampoline_search PASSED                      [ 88%]
+tests/test_search.py::test_cache_info_and_clear PASSED                   [ 90%]
+tests/test_tree.py::test_traversals PASSED                               [ 92%]
+tests/test_tree.py::test_empty_tree PASSED                               [ 95%]
+tests/test_tree.py::test_height PASSED                                   [ 97%]
+tests/test_tree.py::test_build_bst_and_search PASSED                     [100%]
+
+============================= 42 passed in 0.21s ==============================

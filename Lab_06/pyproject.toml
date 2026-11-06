@@ -1,0 +1,20 @@
+[project]
+name = "lab06-authorization-decorators"
+version = "1.0.0"
+description = "ЛР6, варіант 4: авторизація користувачів (closures, decorators)"
+requires-python = ">=3.10"
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

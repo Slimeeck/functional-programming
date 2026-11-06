@@ -1,0 +1,29 @@
+Завантажено 8 записів з sample_data.json
+
+Top-3 (стандартна премія: 5% + 1%/рік, макс. 20%):
+  1. Iryna Kravets      it     salary=   61000 exp= 4 bonus=   5490 total=   66490
+  2. Andrii Shevchenko  it     salary=   52000 exp= 9 bonus=   7280 total=   59280
+  3. Ivan Petrenko      it     salary=   52000 exp= 6 bonus=   5720 total=   57720
+
+Top-3, стаж >= 3, премія за відділом (partial(department_bonus)):
+  1. Iryna Kravets      it     salary=   61000 exp= 4 bonus=   9150 total=   70150
+  2. Andrii Shevchenko  it     salary=   52000 exp= 9 bonus=   7800 total=   59800
+  3. Ivan Petrenko      it     salary=   52000 exp= 6 bonus=   7800 total=   59800
+
+Усі активні, сортування attrgetter('department', 'name'):
+  1. Dmytro Savchuk     hr     salary=   33000 exp= 5 bonus=   9900 total=   42900
+  2. Andrii Shevchenko  it     salary=   52000 exp= 9 bonus=      0 total=   52000
+  3. Iryna Kravets      it     salary=   61000 exp= 4 bonus=      0 total=   61000
+  4. Ivan Petrenko      it     salary=   52000 exp= 6 bonus=      0 total=   52000
+  5. Sofia Lysenko      it     salary=   45000 exp= 2 bonus=      0 total=   45000
+  6. Olena Koval        sales  salary=   38000 exp= 3 bonus=      0 total=   38000
+  7. Taras Melnyk       sales  salary=   45000 exp= 2 bonus=      0 total=   45000
+
+Фонд оплати (reduce): 357130.0
+За відділами (reduce): {'it': 231640.0, 'sales': 89190.0, 'hr': 36300.0}
+
+Інші джерела singledispatch:
+  відкритий CSV-файл  : 8 записів
+  str-шлях до CSV     : 8
+  JSON-рядок          : [{'name': 'x'}]
+  готовий list        : 8

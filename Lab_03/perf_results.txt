@@ -1,0 +1,11 @@
+..................
+mutable   : 0.0069 s / 5000 iterations
+immutable : 0.0640 s / 5000 iterations
+ratio     : x9.25
+...
+============================= slowest 5 durations =============================
+0.09s call     tests/test_performance.py::test_immutable_large_batch
+0.07s call     tests/test_performance.py::test_compare_mutable_vs_immutable_updates
+
+(3 durations < 0.005s hidden.  Use -vv to show these durations.)
+21 passed in 0.25s

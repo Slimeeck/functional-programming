@@ -1,0 +1,20 @@
+[project]
+name = "lab07-employees-functools"
+version = "1.0.0"
+description = "ЛР7, варіант 4: облік працівників (functools, operator)"
+requires-python = ">=3.10"
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

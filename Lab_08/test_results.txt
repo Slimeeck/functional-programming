@@ -1,0 +1,36 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.3, pytest-9.2.0, pluggy-1.7.0 -- C:\labs\Функціональне програмування\.venv\Scripts\python.exe
+rootdir: C:\labs\Функціональне програмування\functional-programming\Lab_08
+configfile: pyproject.toml
+testpaths: tests
+plugins: platformdirs-4.14.5
+collecting ... collected 26 items
+
+tests/test_expr.py::test_eval_basic PASSED                               [  3%]
+tests/test_expr.py::test_eval_nested PASSED                              [  7%]
+tests/test_expr.py::test_render PASSED                                   [ 11%]
+tests/test_expr.py::test_overflow PASSED                                 [ 15%]
+tests/test_shapes.py::test_circle PASSED                                 [ 19%]
+tests/test_shapes.py::test_rectangle_and_square PASSED                   [ 23%]
+tests/test_shapes.py::test_triangles[tri0-6.0-right triangle] PASSED     [ 26%]
+tests/test_shapes.py::test_triangles[tri1-1.7320508075688772-equilateral triangle] PASSED [ 30%]
+tests/test_shapes.py::test_triangles[tri2-12.0-isosceles triangle] PASSED [ 34%]
+tests/test_shapes.py::test_triangles[tri3-9.921567416492215-scalene triangle] PASSED [ 38%]
+tests/test_shapes.py::test_units_conversion PASSED                       [ 42%]
+tests/test_shapes.py::test_convert_returns_new_equivalent_shape PASSED   [ 46%]
+tests/test_shapes.py::test_nested_group PASSED                           [ 50%]
+tests/test_shapes.py::test_empty_group_edge_case PASSED                  [ 53%]
+tests/test_shapes.py::test_scale_is_pure_and_recursive PASSED            [ 57%]
+tests/test_shapes.py::test_nodes_are_frozen_and_hashable PASSED          [ 61%]
+tests/test_shapes.py::test_invalid_shapes[<lambda>0] PASSED              [ 65%]
+tests/test_shapes.py::test_invalid_shapes[<lambda>1] PASSED              [ 69%]
+tests/test_shapes.py::test_invalid_shapes[<lambda>2] PASSED              [ 73%]
+tests/test_shapes.py::test_invalid_shapes[<lambda>3] PASSED              [ 76%]
+tests/test_shapes.py::test_invalid_shapes[<lambda>4] PASSED              [ 80%]
+tests/test_shapes.py::test_invalid_shapes[<lambda>5] PASSED              [ 84%]
+tests/test_shapes.py::test_protocol_structural_typing PASSED             [ 88%]
+tests/test_shapes.py::test_measure PASSED                                [ 92%]
+tests/test_shapes.py::test_render PASSED                                 [ 96%]
+tests/test_shapes.py::test_render_tree_is_nested PASSED                  [100%]
+
+============================= 26 passed in 0.08s ==============================

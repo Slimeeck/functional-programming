@@ -1,0 +1,41 @@
+=== 1. Бінарний пошук у незмінній відсортованій послідовності ===
+Послідовність: (15, 23, 42, 42, 42, 57, 64, 78, 91, 105)
+  шукаємо  57: recursive= 5  iterative= 5  глибина=3  (знайдено)
+  шукаємо  15: recursive= 0  iterative= 0  глибина=3  (знайдено)
+  шукаємо 105: recursive= 9  iterative= 9  глибина=4  (знайдено)
+  шукаємо  42: recursive= 4  iterative= 4  глибина=1  (знайдено)
+  шукаємо  50: recursive=-1  iterative=-1  глибина=4  (відсутнє)
+  шукаємо   0: recursive=-1  iterative=-1  глибина=4  (відсутнє)
+  шукаємо 200: recursive=-1  iterative=-1  глибина=5  (відсутнє)
+  перше входження 42 (lower_bound): 2
+  рядки: ('apple', 'banana', 'cherry', 'kiwi', 'mango') -> 'kiwi' на індексі 3
+  1 000 000 елементів: індекс=999999, глибина рекурсії=20 (≈ log2 n)
+  trampoline-версія: 999999
+  lru_cache: CacheInfo(hits=2, misses=3, maxsize=1024, currsize=3)
+
+=== 2. Ліміт рекурсії та відсутність TCO ===
+  sys.getrecursionlimit() = 1000
+  linear_search_recursive на 5000 елементів -> RecursionError
+  binary_search_recursive на тих самих даних -> 4999
+  fact_tail(5000) (хвостова рекурсія) -> RecursionError: TCO немає
+  trampoline(fact_tramp(5000)) має 54233 біт
+
+=== 3. Quicksort ===
+  вхід: [5, 3, 8, 1, 9, 2, 5, 5, 0]
+  quicksort: [0, 1, 2, 3, 5, 5, 5, 8, 9]
+  quicksort_3way: [0, 1, 2, 3, 5, 5, 5, 8, 9]
+  вхід після сортування (не змінився): [5, 3, 8, 1, 9, 2, 5, 5, 0]
+
+=== 4. Дерево ===
+  preorder : [4, 2, 1, 3, 6, 7]
+  inorder  : [1, 2, 3, 4, 6, 7]
+  postorder: [1, 3, 2, 7, 6, 4]
+  BFS      : [4, 2, 6, 1, 3, 7]
+  DFS iter : [4, 2, 1, 3, 6, 7]
+  висота rec/iter: 3 3
+  BST з tuple, inorder: [10, 20, 30, 40, 50, 60, 70] | містить 50: True
+
+=== 5. Фібоначчі ===
+  fib(0..10): [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+  fib(90) == fib_iter(90): True
+  fib.cache_info(): CacheInfo(hits=99, misses=91, maxsize=None, currsize=91)

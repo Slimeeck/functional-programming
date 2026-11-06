@@ -1,0 +1,26 @@
+=== Pure updates: кожна операція повертає НОВИЙ StockRecord ===
+Початковий запис:      EL-002 Клавіатура     ціна= 1350.00 к-ть=   3 теги=[clearance]
+Після restock(+20):    EL-002 Клавіатура     ціна= 1350.00 к-ть=  23 теги=[clearance]
+Після change_price:    EL-002 Клавіатура     ціна= 1500.00 к-ть=  23 теги=[clearance]
+Після add_tag:         EL-002 Клавіатура     ціна= 1500.00 к-ть=  23 теги=[clearance, promo]
+Після знижки 20%:      EL-002 Клавіатура     ціна= 1200.00 к-ть=  23 теги=[clearance, promo]
+Оригінал (без змін):   EL-002 Клавіатура     ціна= 1350.00 к-ть=   3 теги=[clearance]
+keyboard is v4: False | keyboard == v4: False
+Історія v4: [('in', 20, 'поставка №17'), ('price', 0, '1350.0 -> 1500.0'), ('price', 0, '1500.0 -> 1200.0')]
+
+=== Read-only метадані постачальника ===
+Постачальник: ТОВ Техно {'name': 'ТОВ Техно', 'country': 'UA', 'phone': '+380441112233'}
+Спроба змінити meta -> TypeError : 'mappingproxy' object does not support item assignment
+Нові meta: {'name': 'ТОВ Техно', 'country': 'UA', 'phone': '+380500000000'}
+Старі meta: {'name': 'ТОВ Техно', 'country': 'UA', 'phone': '+380441112233'}
+
+=== Хешованість ===
+StockRecord як ключ dict: ['v0', 'v4']
+hash(v0) != hash(v4): True
+
+=== Запити над складом ===
+Потрібне дозамовлення (< 5 шт.): ['EL-002', 'OF-011']
+Top-2 за вартістю: ['EL-001', 'OF-010']
+Вартість складу: 139210.0
+Вартість складу (з кешу): 139210.0
+lru_cache: CacheInfo(hits=1, misses=1, maxsize=128, currsize=1)

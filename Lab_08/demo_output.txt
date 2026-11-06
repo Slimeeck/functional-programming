@@ -1,0 +1,35 @@
+=== Прості фігури (площа та периметр у cm) ===
+  Circle(r=2 cm)               circle                 S=     12.57  P=  12.57
+  Rectangle(4x3 cm)            rectangle              S=     12.00  P=  14.00
+  Rectangle(5x5 mm)            square                 S=      0.25  P=   2.00
+  Triangle(3, 4, 5 cm)         right triangle         S=      6.00  P=  12.00
+  Triangle(2, 2, 2 m)          equilateral triangle   S=  17320.51  P= 600.00
+  Triangle(5, 5, 8 cm)         isosceles triangle     S=     12.00  P=  18.00
+
+=== Вкладена структура (Group — рекурсивний вузол) ===
+house/ (group of 3, S=16.56 m²)
+  - Rectangle(4x3 m)  [rectangle]  S=12.00 m²
+  - Triangle(4, 2.5, 2.5 m)  [isosceles triangle]  S=3.00 m²
+  windows/ (group of 3, S=1.56 m²)
+    - Rectangle(80x80 cm)  [square]  S=0.64 m²
+    - Rectangle(80x80 cm)  [square]  S=0.64 m²
+    - Circle(r=30 cm)  [circle]  S=0.28 m²
+  render: Group[house: Rectangle(4x3 m), Triangle(4, 2.5, 2.5 m), Group[windows: Rectangle(80x80 cm), Rectangle(80x80 cm), Circle(r=30 cm)]]
+  фігур: 5 | глибина: 3
+  площа, m²: 16.5627
+  measure  : Measurement(kind='group', area=16.5627, perimeter=31.285, unit='m')
+
+=== Pure-перетворення ===
+  scale(Circle(2), 3) -> Circle(r=6 cm) | оригінал: Circle(r=2 cm)
+  convert(Rectangle(4x3 m), 'cm') -> Rectangle(400x300 cm)
+
+=== Protocol HasArea ===
+  total_area(measurements) = 17363.32
+  largest(measurements)    = Measurement(kind='triangle', area=17320.5081, perimeter=600.0, unit='cm')
+
+=== Помилкові дані ===
+  ValueError: triangle inequality violated: 1, 2, 10
+  ValueError: radius must be positive, got -1
+
+=== Базове завдання: Expr = Num | Add | Mul ===
+  ((2 + 3) * 4) = 20

@@ -1,0 +1,25 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.3, pytest-9.2.0, pluggy-1.7.0 -- C:\labs\Функціональне програмування\.venv\Scripts\python.exe
+rootdir: C:\labs\Функціональне програмування\functional-programming\Lab_01
+configfile: pyproject.toml
+testpaths: tests
+plugins: platformdirs-4.14.5
+collecting ... collected 15 items
+
+tests/test_core.py::test_line_total_and_subtotal PASSED                  [  6%]
+tests/test_core.py::test_with_pricing_returns_new_dict PASSED            [ 13%]
+tests/test_core.py::test_is_valid_item PASSED                            [ 20%]
+tests/test_core.py::test_referential_transparency PASSED                 [ 26%]
+tests/test_core.py::test_no_mutation PASSED                              [ 33%]
+tests/test_core.py::test_result_items_are_new_objects PASSED             [ 40%]
+tests/test_core.py::test_full_calculation PASSED                         [ 46%]
+tests/test_core.py::test_coupon_not_applied_below_minimum PASSED         [ 53%]
+tests/test_core.py::test_empty_cart PASSED                               [ 60%]
+tests/test_core.py::test_callable_policies PASSED                        [ 66%]
+tests/test_core.py::test_policy_factories PASSED                         [ 73%]
+tests/test_core.py::test_policy_does_not_depend_on_external_dict_changes PASSED [ 80%]
+tests/test_core.py::test_compose_and_multiplier PASSED                   [ 86%]
+tests/test_core.py::test_map_filter_helpers PASSED                       [ 93%]
+tests/test_core.py::test_stamp_total_uses_injected_clock PASSED          [100%]
+
+============================= 15 passed in 0.16s ==============================

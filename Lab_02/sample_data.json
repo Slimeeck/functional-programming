@@ -1,0 +1,18 @@
+[
+  {"id": 1, "waiter": "olena koval", "table": 3,
+   "items": [{"name": "Борщ", "price": 120.0, "qty": 2}, {"name": "Хліб", "price": 20.0, "qty": 2}, {"name": "Узвар", "price": 45.0, "qty": 2}]},
+  {"id": 2, "waiter": "  taras  ", "table": 12,
+   "items": [{"name": "Піца", "price": 280.0, "qty": 1}, {"name": "Лимонад", "price": 60.0, "qty": 2}]},
+  {"id": 3, "waiter": "IRYNA", "table": 25,
+   "items": [{"name": "Стейк", "price": 650.0, "qty": 2}, {"name": "Вино", "price": 900.0, "qty": 1}]},
+  {"id": 4, "waiter": "taras", "table": 15,
+   "items": [{"name": "Кава", "price": 55.0, "qty": 2}]},
+  {"id": 5, "waiter": "olena koval", "table": 7,
+   "items": [{"name": "Вареники", "price": 150.0, "qty": 2}, {"name": "Салат", "price": 140.0, "qty": 1}]},
+  {"id": 6, "waiter": "andrii", "table": 18,
+   "items": [{"name": "Паста", "price": 210.0, "qty": 2}, {"name": "Чай", "price": 40.0, "qty": 2}]},
+  {"id": 7, "waiter": "iryna", "table": 22,
+   "items": [{"name": "Десерт", "price": 95.0, "qty": 1}]},
+  {"id": 8, "waiter": "maksym", "table": 1,
+   "items": [{"name": "Бургер", "price": 220.0, "qty": 2}]}
+]

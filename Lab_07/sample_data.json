@@ -1,0 +1,10 @@
+[
+  {"name": "  iVAN   petrenko ", "department": " IT ", "salary": 52000, "experience": 6, "active": true},
+  {"name": "olena koval", "department": "sales", "salary": 38000, "experience": 3, "active": "yes"},
+  {"name": "andrii shevchenko", "department": "it", "salary": 52000, "experience": 9, "active": true},
+  {"name": "maria bondar", "department": "hr", "salary": 30000, "experience": 12, "active": false},
+  {"name": "taras melnyk", "department": "Sales", "salary": 45000, "experience": 2, "active": "1"},
+  {"name": "iryna kravets", "department": "it", "salary": 61000, "experience": 4, "active": true},
+  {"name": "dmytro savchuk", "department": "hr", "salary": 33000, "experience": 5, "active": "true"},
+  {"name": "sofia lysenko", "department": "it", "salary": 45000, "experience": 2, "active": true}
+]

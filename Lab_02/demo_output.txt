@@ -1,0 +1,9 @@
+Top-3 чеків (зона 'terrace' x1.1, мін. чек 300.0):
+  1. #3   Iryna        стіл 25  vip      чек = 2200.00
+  2. #6   Andrii       стіл 18  terrace  чек = 550.00
+  3. #2   Taras        стіл 12  terrace  чек = 440.00
+Агрегація (reduce) по всіх допущених чеках:
+  count      = 6
+  sum_checks = 4440.00
+  avg_check  = 740.00
+  max_check  = 2200.00

@@ -1,0 +1,20 @@
+[project]
+name = "lab08-shapes-adt"
+version = "1.0.0"
+description = "ЛР8, варіант 4: геометричні фігури (ADT, match/case)"
+requires-python = ">=3.11"
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

@@ -1,0 +1,22 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.3, pytest-9.2.0, pluggy-1.7.0 -- C:\labs\Функціональне програмування\.venv\Scripts\python.exe
+rootdir: C:\labs\Функціональне програмування\functional-programming\Lab_02
+configfile: pyproject.toml
+testpaths: tests
+plugins: platformdirs-4.14.5
+collecting ... collected 12 items
+
+tests/test_core.py::test_check_total PASSED                              [  8%]
+tests/test_core.py::test_table_zone_boundaries PASSED                    [ 16%]
+tests/test_core.py::test_top_n PASSED                                    [ 25%]
+tests/test_core.py::test_tie_break_by_id PASSED                          [ 33%]
+tests/test_core.py::test_top_n_zero_and_larger_than_data PASSED          [ 41%]
+tests/test_core.py::test_no_mutation PASSED                              [ 50%]
+tests/test_core.py::test_stages_individually PASSED                      [ 58%]
+tests/test_core.py::test_sort_and_take PASSED                            [ 66%]
+tests/test_core.py::test_reduce_stats PASSED                             [ 75%]
+tests/test_core.py::test_reduce_stats_empty PASSED                       [ 83%]
+tests/test_core.py::test_compose_pipe_juxt PASSED                        [ 91%]
+tests/test_core.py::test_pipeline_is_lazy_until_materialized PASSED      [100%]
+
+============================= 12 passed in 0.05s ==============================

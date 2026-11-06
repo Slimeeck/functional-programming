@@ -1,0 +1,9 @@
+name,department,salary,experience,active
+"  iVAN   petrenko "," IT ",52000,6,true
+olena koval,sales,38000,3,yes
+andrii shevchenko,it,52000,9,true
+maria bondar,hr,30000,12,false
+taras melnyk,Sales,45000,2,1
+iryna kravets,it,61000,4,true
+dmytro savchuk,hr,33000,5,true
+sofia lysenko,it,45000,2,true

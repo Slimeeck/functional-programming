@@ -1,0 +1,32 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.3, pytest-9.2.0, pluggy-1.7.0 -- C:\labs\Функціональне програмування\.venv\Scripts\python.exe
+rootdir: C:\labs\Функціональне програмування\functional-programming\Lab_05
+configfile: pyproject.toml
+testpaths: tests
+plugins: platformdirs-4.14.5
+collecting ... collected 22 items
+
+tests/test_streams.py::test_geometric_first_terms PASSED                 [  4%]
+tests/test_streams.py::test_three_implementations_agree PASSED           [  9%]
+tests/test_streams.py::test_up_to_threshold_stops_infinite_stream PASSED [ 13%]
+tests/test_streams.py::test_decreasing_progression_while_above PASSED    [ 18%]
+tests/test_streams.py::test_skip_below PASSED                            [ 22%]
+tests/test_streams.py::test_running_sum_and_product PASSED               [ 27%]
+tests/test_streams.py::test_sum_formula_matches_accumulate PASSED        [ 31%]
+tests/test_streams.py::test_ratios_are_constant PASSED                   [ 36%]
+tests/test_streams.py::test_progression_report PASSED                    [ 40%]
+tests/test_streams.py::test_geometric_is_lazy PASSED                     [ 45%]
+tests/test_streams.py::test_take_drop_on_count PASSED                    [ 50%]
+tests/test_streams.py::test_drop_then_take PASSED                        [ 54%]
+tests/test_streams.py::test_take_drop_edge_cases PASSED                  [ 59%]
+tests/test_streams.py::test_windows_basic PASSED                         [ 63%]
+tests/test_streams.py::test_window_edge_cases PASSED                     [ 68%]
+tests/test_streams.py::test_moving_average PASSED                        [ 72%]
+tests/test_streams.py::test_fib_stream PASSED                            [ 77%]
+tests/test_streams.py::test_naturals_and_pipeline PASSED                 [ 81%]
+tests/test_streams.py::test_primes PASSED                                [ 86%]
+tests/test_streams.py::test_chunked PASSED                               [ 90%]
+tests/test_streams.py::test_tee_safe_independent_copies PASSED           [ 95%]
+tests/test_streams.py::test_accumulate_examples PASSED                   [100%]
+
+============================= 22 passed in 0.07s ==============================

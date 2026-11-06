@@ -1,0 +1,31 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.3, pytest-9.2.0, pluggy-1.7.0 -- C:\labs\Функціональне програмування\.venv\Scripts\python.exe
+rootdir: C:\labs\Функціональне програмування\functional-programming\Lab_03
+configfile: pyproject.toml
+testpaths: tests
+plugins: platformdirs-4.14.5
+collecting ... collected 21 items
+
+tests/test_immutability.py::test_frozen_fields_cannot_be_assigned PASSED [  4%]
+tests/test_immutability.py::test_collection_types_are_immutable PASSED   [  9%]
+tests/test_immutability.py::test_slots_no_dict PASSED                    [ 14%]
+tests/test_immutability.py::test_mappingproxy_is_read_only PASSED        [ 19%]
+tests/test_immutability.py::test_make_meta_copies_source PASSED          [ 23%]
+tests/test_immutability.py::test_validation PASSED                       [ 28%]
+tests/test_immutability.py::test_restock_returns_new_copy PASSED         [ 33%]
+tests/test_immutability.py::test_ship PASSED                             [ 38%]
+tests/test_immutability.py::test_change_price_creates_new_product PASSED [ 42%]
+tests/test_immutability.py::test_add_and_remove_tag PASSED               [ 47%]
+tests/test_immutability.py::test_update_supplier PASSED                  [ 52%]
+tests/test_immutability.py::test_clearance_discount_rule PASSED          [ 57%]
+tests/test_immutability.py::test_chain_of_updates_keeps_every_version PASSED [ 61%]
+tests/test_immutability.py::test_hashability PASSED                      [ 66%]
+tests/test_immutability.py::test_mappingproxy_itself_is_not_hashable PASSED [ 71%]
+tests/test_immutability.py::test_queries PASSED                          [ 76%]
+tests/test_immutability.py::test_lru_cache_on_pure_function PASSED       [ 80%]
+tests/test_immutability.py::test_freeze_deep PASSED                      [ 85%]
+tests/test_performance.py::test_compare_mutable_vs_immutable_updates PASSED [ 90%]
+tests/test_performance.py::test_immutable_large_batch PASSED             [ 95%]
+tests/test_performance.py::test_mutable_large_batch PASSED               [100%]
+
+============================= 21 passed in 0.18s ==============================

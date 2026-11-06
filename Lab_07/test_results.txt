@@ -1,0 +1,32 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.3, pytest-9.2.0, pluggy-1.7.0 -- C:\labs\Функціональне програмування\.venv\Scripts\python.exe
+rootdir: C:\labs\Функціональне програмування\functional-programming\Lab_07
+configfile: pyproject.toml
+testpaths: tests
+plugins: platformdirs-4.14.5
+collecting ... collected 22 items
+
+tests/test_lab07.py::test_pipeline_applies_left_to_right PASSED          [  4%]
+tests/test_lab07.py::test_partial_helpers PASSED                         [  9%]
+tests/test_lab07.py::test_partial_bonus_policies PASSED                  [ 13%]
+tests/test_lab07.py::test_with_bonus_returns_new_object PASSED           [ 18%]
+tests/test_lab07.py::test_operator_tools PASSED                          [ 22%]
+tests/test_lab07.py::test_normalization PASSED                           [ 27%]
+tests/test_lab07.py::test_top_n_pipeline PASSED                          [ 31%]
+tests/test_lab07.py::test_inactive_filtered_and_tie_by_name PASSED       [ 36%]
+tests/test_lab07.py::test_min_years_and_n_edge_cases PASSED              [ 40%]
+tests/test_lab07.py::test_input_records_not_mutated PASSED               [ 45%]
+tests/test_lab07.py::test_reduce_aggregations PASSED                     [ 50%]
+tests/test_lab07.py::test_predicates PASSED                              [ 54%]
+tests/test_lab07.py::test_load_from_path_and_str PASSED                  [ 59%]
+tests/test_lab07.py::test_load_from_open_file PASSED                     [ 63%]
+tests/test_lab07.py::test_load_from_stringio_and_text PASSED             [ 68%]
+tests/test_lab07.py::test_load_from_collections PASSED                   [ 72%]
+tests/test_lab07.py::test_csv_and_json_give_same_result PASSED           [ 77%]
+tests/test_lab07.py::test_unsupported_type_and_bad_json PASSED           [ 81%]
+tests/test_lab07.py::test_all_comparison_operators PASSED                [ 86%]
+tests/test_lab07.py::test_ordering_tie_breakers PASSED                   [ 90%]
+tests/test_lab07.py::test_not_implemented_for_foreign_types PASSED       [ 95%]
+tests/test_lab07.py::test_order_is_hashable PASSED                       [100%]
+
+============================= 22 passed in 0.07s ==============================

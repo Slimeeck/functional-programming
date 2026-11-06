@@ -1,0 +1,46 @@
+=== require_role + ієрархія ролей ===
+[AUDIT] ALLOW alice -> view_report
+[PERF] [timed] view_report took 0.008 ms
+  OK   alice.view_report: alice переглядає звіт 'Q3'
+[AUDIT] ALLOW bob -> view_report
+[PERF] [timed] view_report took 0.005 ms
+  OK   bob.view_report: bob переглядає звіт 'Q3'
+[AUDIT] ALLOW eve -> view_report
+[PERF] [timed] view_report took 0.003 ms
+  OK   eve.view_report: eve переглядає звіт 'Q3'
+[AUDIT] ALLOW bob -> create_document
+  OK   bob.create_document: 101
+[AUDIT] ALLOW alice -> create_document
+  OK   alice.create_document: 102
+[AUDIT] DENY eve -> create_document
+  FAIL eve.create_document: AuthorizationError: user 'eve' needs role [editor] to call create_document()
+
+=== тільки admin + @logged ===
+[AUDIT] WARNING call delete_document(User(name='alice', roles=frozenset({'admin'})), 101)
+[AUDIT] ALLOW alice -> delete_document
+[AUDIT] WARNING delete_document -> 'документ #101 видалено користувачем alice'
+  OK   alice.delete_document: документ #101 видалено користувачем alice
+[AUDIT] WARNING call delete_document(User(name='bob', roles=frozenset({'editor'})), 101)
+[AUDIT] DENY bob -> delete_document
+[AUDIT] WARNING delete_document raised AuthorizationError: user 'bob' needs role [admin] to call delete_document()
+  FAIL bob.delete_document: AuthorizationError: user 'bob' needs role [admin] to call delete_document()
+
+=== mode='all' ===
+[AUDIT] DENY alice -> rotate_keys
+  FAIL alice.rotate_keys: AuthorizationError: user 'alice' needs role [admin, security] to call rotate_keys()
+[AUDIT] ALLOW root -> rotate_keys
+  OK   root.rotate_keys: ключі оновлено
+
+=== роль із сесії ===
+[AUDIT] ANON -> reset_cache
+  FAIL anonymous.reset_cache: AuthenticationError: login required for reset_cache()
+[AUDIT] DENY bob -> reset_cache
+  FAIL bob(session).reset_cache: AuthorizationError: user 'bob' needs role [admin] to call reset_cache()
+[AUDIT] ALLOW alice -> reset_cache
+  OK   alice(session).reset_cache: кеш скинуто
+  входів у сесії: 2
+
+=== метадані після декорування ===
+  __name__   : delete_document
+  __doc__    : Видалити документ (тільки admin).
+  __wrapped__: True

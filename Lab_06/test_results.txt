@@ -1,0 +1,33 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.3, pytest-9.2.0, pluggy-1.7.0 -- C:\labs\Функціональне програмування\.venv\Scripts\python.exe
+rootdir: C:\labs\Функціональне програмування\functional-programming\Lab_06
+configfile: pyproject.toml
+testpaths: tests
+plugins: platformdirs-4.14.5
+collecting ... collected 23 items
+
+tests/test_closures.py::test_counter_keeps_state_in_closure PASSED       [  4%]
+tests/test_closures.py::test_logger_with_injected_sink PASSED            [  8%]
+tests/test_closures.py::test_role_checker_any_and_all PASSED             [ 13%]
+tests/test_closures.py::test_role_checker_copies_roles PASSED            [ 17%]
+tests/test_closures.py::test_role_hierarchy_is_transitive PASSED         [ 21%]
+tests/test_closures.py::test_role_hierarchy_handles_cycles PASSED        [ 26%]
+tests/test_closures.py::test_session_state PASSED                        [ 30%]
+tests/test_closures.py::test_user_is_immutable_and_hashable PASSED       [ 34%]
+tests/test_composition.py::test_timed_outside_measures_denied_calls_too PASSED [ 39%]
+tests/test_composition.py::test_timed_inside_is_skipped_when_denied PASSED [ 43%]
+tests/test_composition.py::test_compose_decorators_equals_stacking PASSED [ 47%]
+tests/test_composition.py::test_logged_outside_logs_authorization_error PASSED [ 52%]
+tests/test_decorators.py::test_require_role_allows_and_denies PASSED     [ 56%]
+tests/test_decorators.py::test_denied_function_body_is_not_executed PASSED [ 60%]
+tests/test_decorators.py::test_require_role_any_vs_all_mode PASSED       [ 65%]
+tests/test_decorators.py::test_require_role_with_hierarchy PASSED        [ 69%]
+tests/test_decorators.py::test_require_role_needs_at_least_one_role PASSED [ 73%]
+tests/test_decorators.py::test_require_session_role PASSED               [ 78%]
+tests/test_decorators.py::test_timed_uses_injected_clock PASSED          [ 82%]
+tests/test_decorators.py::test_timed_logs_even_on_exception PASSED       [ 86%]
+tests/test_decorators.py::test_timed_units PASSED                        [ 91%]
+tests/test_decorators.py::test_logged_result_and_exception PASSED        [ 95%]
+tests/test_decorators.py::test_wraps_preserves_metadata PASSED           [100%]
+
+============================= 23 passed in 0.06s ==============================
